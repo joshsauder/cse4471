@@ -1,0 +1,49 @@
+.navbar {
+    overflow:hidden;
+    background-color: red;
+    font-family: Arial;
+}
+
+.navbar a {
+    float: left;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 8px 16px 16px;
+    text-decoration: none;
+}
+
+.navbar li {
+    float:left;
+    list-style-type: none;
+    text-align: center;
+}
+
+
+.dropdown {
+    float: left;
+    overflow:hidden;
+}
+
+.navbar a:hover, .dropdown:hover {
+    background-color: black;
+}
+
+.dropdown-content {
+    display:none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-widgth: 180px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 18px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: limegreen;
+}
