@@ -10,11 +10,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="../scripts/routeScript.js"></script>
 
 </head>
 
 <body ng-app="myApp">
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded justify-content-between">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -24,25 +25,19 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="#!sqlInjection">SQL Injection</a>
-                <a class="nav-item nav-link" href="#">XSS</a>
-                <a class="nav-item nav-link" href="#">HTTP Response Splitting</a>
-                <a class="nav-item nav-link" href="#">CORS</a>
-                <a class="nav-item nav-link" href="#">Buffer Overflow</a>
-                <a class="nav-item nav-link" href="#">Shellshock</a>
-                <a class="nav-item nav-link" href="#">Username Enumeration</a>
-                <a class="nav-item nav-link" href="#">Allowing Redirects</a>
+                <a class="nav-item nav-link" href="#!xss">XSS</a>
+                <a class="nav-item nav-link" href="#!responseSplitting">Response Splitting</a>
+                <a class="nav-item nav-link" href="#!parameterPollution">Parameter Pollution</a>
+                <a class="nav-item nav-link" href="#!weakPasswords">Weak Passwords</a>
+                <a class="nav-item nav-link" href="#!cors">CORS</a>
+                <a class="nav-item nav-link" href="#!bufferOverflow">Buffer Overflow</a>
+                <a class="nav-item nav-link" href="#!shellshock">Shellshock</a>
+                <a class="nav-item nav-link" href="#!usernameEnumeration">Username Enumeration</a>
+                <a class="nav-item nav-link" href="#!redirects">Allowing Redirects</a>
             </div>
         </div>
     </nav>
+
     <div ng-view></div>
-    <script>
-        var app = angular.module("myApp", ["ngRoute"]);
-        app.config(function($routeProvider) {
-            $routeProvider
-                .when('/sqlInjection', {
-                    templateUrl: "sqlInjection.html"
-                });
-        });
-    </script>
 </body>
 </html>

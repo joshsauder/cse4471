@@ -1,1 +1,1 @@
-<?php header( 'Location: /templates/safe.html' ) ;  ?>
+<?php header( 'Location: /templates/index.html' ) ;  ?>
