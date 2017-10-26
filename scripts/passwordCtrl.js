@@ -13,7 +13,7 @@ app.controller('passCtrl', function($scope){
             }
         }
     }
-    $scope.submit = function(password){
-        password = "";
+    $scope.submit = function(){
+        return "Success!";
     }
 });
