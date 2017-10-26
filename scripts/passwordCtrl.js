@@ -15,6 +15,5 @@ app.controller('passCtrl', function($scope){
     }
     $scope.submit = function(password){
         $scope.password = null;
-        return "Success!";
     }
 });
