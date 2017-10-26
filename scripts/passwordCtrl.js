@@ -7,13 +7,14 @@ app.controller('passCtrl', function($scope){
             $scope.strength++;
         }
         for(var i in tests){
-            var testExp = new RegExp(i);
+            var testExp = new RegExp(tests[i]);
             if(testExp.test(password)){
                 $scope.strength++;
             }
         }
     }
-    $scope.submit = function(){
+    $scope.submit = function(password){
+        $scope.password = null;
         return "Success!";
     }
 });
