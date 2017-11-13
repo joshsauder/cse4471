@@ -1,6 +1,9 @@
 var app = angular.module("myApp", ["ngRoute", "ngSanitize"]);
 app.config(function($routeProvider) {
     $routeProvider
+        .when('/', {
+            templateUrl: "exploit_pages/home.html"
+        })
         .when('/sqlInjection', {
             templateUrl: "exploit_pages/sqlInjection.html"
         })
