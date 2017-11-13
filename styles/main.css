@@ -1,3 +1,15 @@
 h2 {
     padding-top: 2%;
 }
+
+h5 {
+    padding: 1em 0 1em;
+}
+
+p.code {
+    font-family: "Courier New", monospace;
+}
+
+div.container {
+    padding: 0 0 2em;
+}
