@@ -13,3 +13,13 @@ p.code {
 div.container {
     padding: 0 0 2em;
 }
+
+#footer {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    padding-left: 1%;
+    height: 30px;
+    width: 100%;
+    background: #999999;
+}
