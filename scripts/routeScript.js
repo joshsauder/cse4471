@@ -22,8 +22,8 @@ app.config(function($routeProvider) {
         .when('/cors', {
             templateUrl : "exploit_pages/cors.html"
         })
-        .when('/bufferOverflow', {
-            templateUrl : "exploit_pages/bufferOverflow.html"
+        .when('/https', {
+            templateUrl : "exploit_pages/httpVsHttps.html"
         })
         .when('/shellshock', {
             templateUrl : "exploit_pages/shellshock.html"
