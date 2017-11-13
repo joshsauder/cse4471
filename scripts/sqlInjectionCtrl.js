@@ -1,4 +1,4 @@
 var app = angular.module("myApp");
 app.controller('sqlCtlr', ['$scope', function($scope) {
-    $scope.regex = '^[a-zA-Z0-9_-]+$';
+    $scope.regex = '^[a-zA-Z0-9_-]{1,14}$';
 }]);
