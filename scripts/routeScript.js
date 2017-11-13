@@ -4,6 +4,9 @@ app.config(function($routeProvider) {
         .when('/', {
             templateUrl: "exploit_pages/home.html"
         })
+        .when('/insecurePasswords', {
+            templateUrl: "exploit_pages/insecurePasswords.html"
+        })
         .when('/sqlInjection', {
             templateUrl: "exploit_pages/sqlInjection.html"
         })
