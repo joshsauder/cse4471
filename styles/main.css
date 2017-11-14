@@ -8,6 +8,7 @@ h5 {
 
 p.code {
     font-family: "Courier New", monospace;
+    white-space: pre;
 }
 
 div.container {
