@@ -22,19 +22,10 @@ app.config(function($routeProvider) {
         .when('/weakPasswords', {
             templateUrl : "exploit_pages/weakPasswords.html"
         })
-        .when('/cors', {
-            templateUrl : "exploit_pages/cors.html"
-        })
         .when('/https', {
             templateUrl : "exploit_pages/httpVsHttps.html"
         })
-        .when('/shellshock', {
-            templateUrl : "exploit_pages/shellshock.html"
-        })
         .when('/usernameEnumeration', {
             templateUrl : "exploit_pages/usernameEnumeration.html"
-        })
-        .when('/redirects', {
-            templateUrl : "exploit_pages/redirects.html"
         });
 });
