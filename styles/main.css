@@ -11,6 +11,10 @@ p.code {
     white-space: pre;
 }
 
+p.formatted {
+    white-space: pre;
+}
+
 div.container {
     padding: 0 0 2em;
 }
