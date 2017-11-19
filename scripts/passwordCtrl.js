@@ -5,7 +5,7 @@ app.controller('passCtrl', function($scope){
     var passStore = ["A1B2@", "GoBucks", "SaveTheCrew"]
     $scope.testPass = function(password){
         $scope.strength = 0;
-        //array of tests to run on inputed passwords
+        //array of tests to run on inputted passwords
         //including numeric, one upper and lowercase letter, one special character
         //and a length of at least 8
         var tests = [/[0-9]/, /[a-z]/, /[A-Z]/, /[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/];
@@ -24,13 +24,10 @@ app.controller('passCtrl', function($scope){
         //one submit, reset password field
         $scope.password = null;
         $scope.passlimit=0;
-<<<<<<< HEAD
-    }
-    /*
-    Below is used for usernameEnumeration
-    */
-=======
 
+        /*
+          Below is used for usernameEnumeration
+        */
         var possibleCharacters = 0;
         var combinations;
         var standardRate = 1.7*Math.pow(10,-6);
@@ -125,7 +122,6 @@ app.controller('passCtrl', function($scope){
         return returnString;
     };
 
->>>>>>> 5ae98c25cb24a73e061d1bb88ddff5aebdd60de5
     $scope.incrementPassCount = function(){
         //increment password limit counter
         $scope.passlimit++;
