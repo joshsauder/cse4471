@@ -1,4 +1,7 @@
 var app = angular.module("myApp", ["ngRoute", "ngSanitize"]);
+/*
+Depending on what button is clicked, route to the following html page using angular's routing directive
+ */
 app.config(function($routeProvider) {
     $routeProvider
         .when('/', {
