@@ -30,8 +30,11 @@ app.controller('passCtrl', function($scope){
         */
         var possibleCharacters = 0;
         var combinations;
+        //number of seconds to calculate a password hash on a standard desktop computer
         var standardRate = 1.7*Math.pow(10,-6);
+        //number of seconds to calculate a password hash using a standard GPU
         var gpuRate = 1.7*Math.pow(10,-8);
+        //number of seconds to calculate a password hash using a supercomputer or large bot-net
         var supercomputerRate = 1.7*Math.pow(10,-11);
         var rates = [standardRate, gpuRate, supercomputerRate];
         var seconds;
@@ -44,6 +47,7 @@ app.controller('passCtrl', function($scope){
         var specialChar = false;
         var number = false;
         var passwordArray = password.split('');
+        //iterate through characters in password to determine what types of characters it contains
         for (var i = 0; i < passwordArray.length; i++) {
             if ((passwordArray[i] >= 'a' && passwordArray[i] <= 'z') && !lowercase) {
                 possibleCharacters += 26;
@@ -63,10 +67,13 @@ app.controller('passCtrl', function($scope){
                 specialChar = true;
             }
         }
+        //calculate total number of possibilities given used character types and length
         combinations = Math.pow(possibleCharacters,password.length);
 
         for (i = 0; i < 3; i++) {
+            //calculate average amount of time to brute force at different hashing rates
             seconds = combinations*rates[i] / 2;
+            //translate number of seconds to more understandable unit of time
             if (seconds < 60) {
                 time = seconds;
                 unit = "seconds";
@@ -92,7 +99,7 @@ app.controller('passCtrl', function($scope){
                 time = -1;
                 unit = "a very long time";
             }
-
+            //format time estimates
             if (i == 0) {
                 if (time < 0) {
                     returnString = "Your password, on average, would take " + unit
