@@ -1,3 +1,8 @@
+/*
+Script used in the Cross-Site Scripting (XSS) example.
+
+Contributors: Josh Sauder
+ */
 var app = angular.module("myApp");
 
 app.controller('xxsCtrl', ['$scope', '$sce', function($scope, $sce){

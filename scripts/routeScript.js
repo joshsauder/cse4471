@@ -1,3 +1,9 @@
+/*
+Routing script used to provide navigation through the webpage.
+
+Contributors: Josh Sauder, Sam Lewis, Richard Feldtz
+ */
+
 var app = angular.module("myApp", ["ngRoute", "ngSanitize"]);
 /*
 Depending on what button is clicked, route to the following html page using angular's routing directive

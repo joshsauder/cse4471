@@ -1,3 +1,8 @@
+/*
+Algorithm used to determine estimates of brute force attempts of guessing a entered password.
+
+Contributors: Sam Lewis, Josh Sauder, Richard Feldtz
+ */
 var app = angular.module("myApp");
 app.controller('passCtrl', function($scope){
     $scope.passlimit = 0;
