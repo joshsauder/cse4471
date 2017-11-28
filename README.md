@@ -48,6 +48,9 @@ A website designed to give background information about common website exploits 
 ### URL
 https://cse4471-safe-exploit-webpage.herokuapp.com
 
+### Research
+Extensive research was done to gather the information that was reported on each section of the website. Sources and further readings are listed on individual exploit pages in the safe website.
+
 ## security-checker
 Automated penetration testing tool that uses web scraping to search for vulnerabilities on web pages. It is a Ruby script that uses the gems Mechanize and Nokogiri.
 
@@ -70,4 +73,3 @@ Due to the nature of Mechanize, there were certain features that could not be im
 * Mechanize cannot execute Javascript, so the security checker can only check if a script can be injected, not if it can be executed
 * Mechanize cannot open local HTML files, so all sites you wish to test must be live on the Internet
 * Web scraping is inherently brittle, so it may not be able to find some forms on your web site. We do not recommend using this tool as your only form of testing, but it is an excellent starting point
-okuapp.com
